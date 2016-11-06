@@ -1,0 +1,15 @@
+task :update_dash_data do
+
+	while true do
+		puts ruby "imgur-cat.rb"
+		puts ruby "imgur-dog.rb"
+		puts ruby "imgur-meme.rb"
+		puts ruby "imgur-pun.rb"
+		puts ruby "gmaps-travel-times.rb"
+		puts ruby "rubists-online-reddit.rb"
+		sleep 300
+	end
+	
+end
+
+task default: :update_dash_data
