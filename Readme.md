@@ -14,6 +14,9 @@
 <b>
 git clone https://github.com/murjaxryan/Personal-Dash.git;<br>
 cd Personal-Dash;<br>
+gem install mechanize
+ruby ruby/imgur-cat.rb;ruby ruby/imgur-dog.rb;ruby ruby/imgur-pun.rb;ruby ruby/imgur-meme.rb;ruby ruby/rubists-online-reddit.rb;
+
 open .;<br>
 open index.html using chrome.
 </b>
