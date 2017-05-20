@@ -4,11 +4,11 @@ $(function(){
 	var date = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 	$('#time').html(date);
 
-	$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=32084&units=metric&appid=42009b873989896f45246d961a6a290c", function(data){
+	$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=32084&units=metric&appid=42009b873989896f45246d961a6a290c", function(data){
 		$('#temp').html(Math.round((data.main.temp * 1.8) + 32) + '&deg;');
 	});
 
-	$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=32256&units=metric&appid=42009b873989896f45246d961a6a290c", function(data){
+	$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=32256&units=metric&appid=42009b873989896f45246d961a6a290c", function(data){
 		$('#tempjax').html(Math.round((data.main.temp * 1.8) + 32) + '&deg;');
 	});
 
